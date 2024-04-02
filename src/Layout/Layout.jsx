@@ -1,12 +1,27 @@
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 import NavBar from "../components/Navbar";
+import AboutUs from "../pages/AboutUs";
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-full h-full flex flex-col flex-start bg-blue-300 py-7">
-      <div>
+    <div className="w-full h-full flex flex-col flex-start gap-0">
+      <div className="max-h-10">
         <NavBar />
       </div>
-      <div className="w-full h-full">{children}</div>
+      <div className="flex flex-col">
+      <div className="bg-white mt-12 text-gray-400 text-center text-xl">
+      cadxitservices
+      </div>
+      <div>
+        <Hero/>
+      </div>
+      <div>
+        <AboutUs/>
+        </div>
+      </div>
+      <div className="w-full h-full min-h-screen mt-10">{children}</div>
+      <div><Footer/></div>
     </div>
   );
 };
