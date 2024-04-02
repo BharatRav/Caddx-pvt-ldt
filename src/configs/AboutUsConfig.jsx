@@ -1,3 +1,5 @@
+import src1 from "../assets/about1.jpg"
+console.log(src1)
 export const  aboutUsConfig = [
     {
         src:"",

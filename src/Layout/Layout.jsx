@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import NavBar from "../components/Navbar";
 import AboutUs from "../pages/AboutUs";
+import Contact from "../pages/Contact";
 
 const Layout = ({ children }) => {
   return (
@@ -19,8 +20,11 @@ const Layout = ({ children }) => {
       <div>
         <AboutUs/>
         </div>
+        <div>
+        <Contact/>
+        </div>
       </div>
-      <div className="w-full h-full min-h-screen mt-10">{children}</div>
+      <div className="w-full h-full min-h-screen mt-10 bg-white">{children}</div>
       <div><Footer/></div>
     </div>
   );

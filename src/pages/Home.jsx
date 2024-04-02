@@ -10,9 +10,9 @@ import thirdPic from "../assets/3.jpg"
 
 
 const Home = () => {
-  return <div className="flex flex-col w-full">
+  return <div className="flex flex-col w-full bg-white">
     <div className="text-white">
-            <Carousel>
+            <Carousel className="bg-white pb-2">
                 <div>
                     <img className="w-auto h-auto max-h-[600px]" src={engineerPic} />
                     <p className="legend">Cadd machenical</p>
@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </Carousel>
     </div>
-    <div>
+    <div className=" flex">
       <KeyConcepts/>
     </div>
   </div>;

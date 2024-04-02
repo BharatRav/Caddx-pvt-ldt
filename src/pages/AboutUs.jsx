@@ -1,10 +1,27 @@
 import ImageAndData from "../components/ImageAndData";
 import { aboutUsConfig } from "../configs/AboutUsConfig";
+import firstImg from "../assets/about1.jpg";
+import secondImg from "../assets/about2.jpg";
+import thirdImg from "../assets/about3.jpg";
+console.log(firstImg)
 
 const AboutUs = () => {
+  const images = [firstImg, secondImg, thirdImg]
   return <div className="bg-white">
     <div className="text-gray-600 text-4xl font-semibold text-center m-4">ABOUT CADXITSERVICES</div>
-    <div>{aboutUsConfig.map((item,idx)=>(<ImageAndData key={idx} heading={item.heading} description={item.description} src={item.src} toggle={idx%2===0}/>))}</div>
+    <div>
+      {aboutUsConfig.map((item,idx)=>
+      {
+        return   <ImageAndData 
+              key={idx} 
+              heading={item.heading}
+              description={item.description} 
+              toggle={idx%2===0}
+              img={images[idx]}
+            />
+      }
+      )}
+    </div>
   </div>;
 };
 
