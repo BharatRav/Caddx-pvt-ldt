@@ -7,7 +7,7 @@ import { Close,Menu } from "@mui/icons-material";
 const NavBar = () => {
   const [open,setOpen] = useState(false);
   const handleMenu = (e)=>{
-    console.log("hello")
+gi
     setOpen(!open);
   }
   return (
