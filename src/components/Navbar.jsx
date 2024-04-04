@@ -32,7 +32,7 @@ gi
         Take Solution
       </button>
       {/* mobile */}
-      <button className="bg-transparent hover:scale-105 duration-500 px-6 duration-300 delay-200 my-auto py-1 text-gray-400 absolute right-2 top-2" onClick={handleMenu}>{open?<Close/>:<Menu/>}</button>
+      <button className="bg-transparent hover:scale-105 md:hidden px-6 duration-300 delay-200 my-auto py-1 text-gray-400 absolute right-2 top-2" onClick={handleMenu}>{open?<Close/>:<Menu/>}</button>
       {open && <div className="flex z-50 duration-300 flex-col justify-around items-center w-screen  h-screen md:hidden">
       {NavbarConfig.map((curr, idx) => (
           <Link
