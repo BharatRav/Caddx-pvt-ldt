@@ -17,11 +17,12 @@ const Layout = ({ children }) => {
       <div>
         <Hero/>
       </div>
-      <div>
-        <AboutUs/>
-        </div>
+     
         <div>
         <Contact/>
+        </div>
+        <div>
+        <AboutUs/>
         </div>
       </div>
       <div className="w-full h-full min-h-screen mt-10 bg-white">{children}</div>
