@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       {/* cursor animation */}
       <div className="flex flex-col">
       <div className="bg-white mt-12 text-gray-400 text-center text-xl">
-      cadxitservices
+      cadx it services
       </div>
       <div>
         <Hero/>

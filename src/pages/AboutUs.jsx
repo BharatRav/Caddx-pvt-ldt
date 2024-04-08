@@ -8,7 +8,7 @@ console.log(firstImg)
 const AboutUs = () => {
   const images = [firstImg, secondImg, thirdImg]
   return <div className="bg-white">
-    <div className="text-gray-600 text-4xl font-semibold text-center m-4">ABOUT CADXITSERVICES</div>
+    <div className="text-gray-600 text-4xl font-semibold text-center m-4">ABOUT CADX SERVICES</div>
     <div>
       {aboutUsConfig.map((item,idx)=>
       {

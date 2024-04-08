@@ -39,7 +39,7 @@ export const RoutingConfig = [
   {
     id: 5,
     name: "About Us",
-    path: "/about-us",
+    path: "/aboutus",
     component: AboutUs,
   },
   {
