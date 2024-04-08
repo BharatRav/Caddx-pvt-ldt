@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </Carousel>
     </div>
-    <div className=" flex">
+    <div >
       <KeyConcepts/>
     </div>
   </div>;

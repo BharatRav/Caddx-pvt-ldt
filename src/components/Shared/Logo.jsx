@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/cadx_logo.png"
 const Logo = () => {
   const navigate = useNavigate();
   return (
     <div
       onClick={() => navigate("/")}
-      className="m-1 cursor-pointer w-fit scale-100 hover:scale-105 ease-out duration-500 text-white bg-giants-orange font-bold px-2 py-2 rounded-sm"
+      className="m-1 cursor-pointer w-fit scale-100 hover:scale-105 ease-out duration-500 text-white font-bold px-2 py-2 rounded-sm"
     >
-      Cadd<sub className="text-soft-black opacity-65 font-black">X</sub>
+      {/* CAD<sub className="text-soft-black opacity-65 font-black">X</sub> */}
+      <img src={logo} className="lg:h-9 md:h-8 h-4"/>
     </div>
   );
 };
