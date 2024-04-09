@@ -7,6 +7,7 @@ export default {
         "giants-orange": "#fe5a1d",
         "orange-red": "#ff4500",
         "soft-black": "#232429",
+        paragraph: "#6f6f6f",
       },
       keyframes: {
         "left-to-right-fill": {

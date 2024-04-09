@@ -1,4 +1,4 @@
-import AboutUs from "../pages/AboutUs.jsx";
+import About from "../pages/AboutPage.jsx";
 import Blog from "../pages/Blog.jsx";
 import Blogs from "../pages/Blogs.jsx";
 import Contact from "../pages/Contact.jsx";
@@ -40,12 +40,12 @@ export const RoutingConfig = [
     id: 5,
     name: "About Us",
     path: "/aboutus",
-    component: AboutUs,
+    component: About,
   },
   {
     id: 6,
     name: "Contact",
-    path: "/contact",
+    path: "/contact_us",
     component: Contact,
   },
 ];

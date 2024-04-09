@@ -38,7 +38,7 @@ const NavBar = () => {
                   <p className="whitespace-nowrap font-medium opacity-80">{child.navItem}</p>
                   <div className="ml-4">{
                     child.children?.map((cchild,ccidx)=>{
-                      return <Link key={ccidx} to={cchild.navLink} className=" hover:bg-orange-red text-opacity-80 hover:text-white rounded-lg active:bg-pink-400 flex gap-0.5 justify-start items-center p-2"><FaChevronRight color="black" className="opacity-15" /><p>{cchild.navItem}</p></Link>
+                      return <Link key={ccidx} to={cchild.navLink} className=" hover:bg-orange-red text-opacity-80 hover:text-white rounded-lg active:bg-pink-400 flex gap-0.5 justify-start items-center p-2"><FaChevronRight color="black" className="opacity-15 hover:bg-orange-red" /><p>{cchild.navItem}</p></Link>
                     })
                   }</div>
                   
