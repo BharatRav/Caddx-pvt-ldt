@@ -7,6 +7,9 @@ import missionPic from "../assets/aboutUs/mission.jpg";
 import impactPic from "../assets/aboutUs/impact.jpg";
 import OurTeam from "../components/aboutus/OurTeam";
 
+//carousel images
+import carousel1 from "../assets/aboutUs/carousel/GOPR0328.jpg";
+import carousel2 from "../assets/aboutUs/carousel/GOPR0329.jpg";
 const AboutPage = () => {
   return (
     <div className="md:mt-4 px-4 md:px-8 lg:px-16 container mx-auto">
@@ -96,7 +99,7 @@ const AboutPage = () => {
           reverse={false}
         />
       </div>
-      <OurTeam />
+      <OurTeam imgArr={[carousel1, carousel2]} />
 
       <div
         className=" bg-no-repeat
