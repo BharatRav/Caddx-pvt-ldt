@@ -10,6 +10,11 @@ import OurTeam from "../components/aboutus/OurTeam";
 //carousel images
 import carousel1 from "../assets/aboutUs/carousel/GOPR0328.jpg";
 import carousel2 from "../assets/aboutUs/carousel/GOPR0329.jpg";
+import carousel3 from "../assets/aboutUs/carousel/GOPR3.jpeg";
+import carousel4 from "../assets/aboutUs/carousel/GOPR4.jpeg";
+import carousel5 from "../assets/aboutUs/carousel/GOPR5.jpeg";
+import carousel6 from "../assets/aboutUs/carousel/GOPR6.jpeg";
+import carousel7 from "../assets/aboutUs/carousel/GOPR7.jpeg";
 const AboutPage = () => {
   return (
     <div className="md:mt-4 px-4 md:px-8 lg:px-16 container mx-auto">
@@ -48,20 +53,23 @@ const AboutPage = () => {
         If you have any questions about any product, service or distributor,
         please contact us at the email below to let us know your concerns.
         <br />
-        <br />R & D department：andy@caddxfpv.com
+        <br /> Deal inquiry: amit@cadx.org.in
         <br />
-        Partnership inquiry: jason@caddxfpv.com
-        <br />
-        Marketing inquiry: tina@caddxfpv.com
+        Partnership inquiry: firoz@cadx.org.in
         <br />
         <br />
-        After-sales/ Technical service: support@caddxfpv.com
+        R & D department：bharat@cadx.org.in
+        <br />
+        Marketing inquiry: manisha@cadx.org.in
         <br />
         <br />
-        Order/ Shipping: service@caddxfpv.com
+        After-sales/ Technical service: support@cadx.org.in
         <br />
         <br />
-        Continue to bring better value to the FPV community, we are CADX
+        Services: service@cadx.org.in
+        <br />
+        <br />
+        Continue to bring better value to the Cadx community, we are CADX
         Automation, let's work together for the circle we love!🥂 We are
         professional in CAD and Automation
         <br /> but we have passion and energy just like you pilots ! Welcome to
@@ -99,7 +107,17 @@ const AboutPage = () => {
           reverse={false}
         />
       </div>
-      <OurTeam imgArr={[carousel1, carousel2]} />
+      <OurTeam
+        imgArr={[
+          carousel1,
+          carousel2,
+          carousel3,
+          carousel4,
+          carousel5,
+          carousel6,
+          carousel7,
+        ]}
+      />
 
       <div
         className=" bg-no-repeat

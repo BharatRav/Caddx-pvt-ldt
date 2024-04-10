@@ -13,8 +13,8 @@ const NavBar = () => {
     setOpen(!open);
   };
   return (
-    <header className="fixed w-full z-10 bg-white shadow-sm flex flex-col md:flex-row gap-4 justify-between md:items-center px-5">
-      <div className="justify-self-start  md:block">
+    <header className="fixed w-full z-10 gradient bg-gradient-to-br from-white to-[#f6f6f6]  bg-white shadow-lg flex flex-col md:flex-row gap-4 justify-between md:items-center px-5">
+      <div className="justify-self-start bg-white  md:block">
         <Logo />
       </div>
       <div className="gap-5 relative md:flex hidden">

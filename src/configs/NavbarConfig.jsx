@@ -4,13 +4,17 @@ export const NavbarConfig = [
     navLink: "/",
   },
   {
-    navItem: "Training",
+    navItem: "Become a Partner",
     navLink: "#",
-    children:[
+  },
+  {
+    navItem: "Skill Developemt",
+    navLink: "#",
+    children: [
       {
         navItem: "Latest Technologies",
         navLink: "#",
-        children:[
+        children: [
           {
             navItem: "3D PRINTING",
             navLink: "#",
@@ -36,7 +40,7 @@ export const NavbarConfig = [
       {
         navItem: "Mechanical",
         navLink: "#",
-        children:[
+        children: [
           {
             navItem: "AUTOCAD",
             navLink: "#",
@@ -61,13 +65,12 @@ export const NavbarConfig = [
             navItem: "NX CAD",
             navLink: "#",
           },
-         
         ],
       },
       {
         navItem: "Civil",
         navLink: "#",
-        children:[
+        children: [
           {
             navItem: "AUTOCAD",
             navLink: "#",
@@ -84,13 +87,12 @@ export const NavbarConfig = [
             navItem: "STAAD.pro",
             navLink: "#",
           },
-          
         ],
       },
       {
         navItem: "IT",
         navLink: "#",
-        children:[
+        children: [
           {
             navItem: "C PROGRAMMING",
             navLink: "#",
@@ -114,49 +116,61 @@ export const NavbarConfig = [
         ],
       },
     ],
-  //   children:[
-  //     {
-  //       navItem: "Artificial Intelligence",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "3D printing",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "IOT",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "UAV",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "AutoCad",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "Solid Works",
-  //       navLink: "#",
-  //     },
-  //     {
-  //       navItem: "Robotics",
-  //       navLink: "#",
-  //     },
-  // ]
+    //   children:[
+    //     {
+    //       navItem: "Artificial Intelligence",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "3D printing",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "IOT",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "UAV",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "AutoCad",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "Solid Works",
+    //       navLink: "#",
+    //     },
+    //     {
+    //       navItem: "Robotics",
+    //       navLink: "#",
+    //     },
+    // ]
   },
   {
-    navItem: "R&D",
+    navItem: "Services",
     navLink: "#",
-  },
- 
-  {
-    navItem: "Manufacturing",
-    navLink: "#",
+    children: [
+      {
+        navItem: "R&D",
+        navLink: "#",
+      },
 
+      {
+        navItem: "Manufacturing",
+        navLink: "#",
+      },
+      {
+        navItem: "Molding",
+        navLink: "#",
+      },
+    ],
   },
- 
-  
+  {
+    navItem: "Product",
+    navLink: "#",
+  },
+
   {
     navItem: "Contact us",
     navLink: "/contact_us",

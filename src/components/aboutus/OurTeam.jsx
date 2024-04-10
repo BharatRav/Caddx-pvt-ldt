@@ -7,7 +7,13 @@ import CustomImage from "../Shared/CustomImage";
 const OurTeam = ({ imgArr = [] }) => (
   <div className="text-white py-8">
     <h4 className="text-center text-3xl my-4 text-black">Our Team</h4>
-    <Carousel className="bg-white pb-2">
+    <Carousel
+      autoPlay={true}
+      interval={2000}
+      infiniteLoop={true}
+      showIndicators={true}
+      className="bg-white pb-2"
+    >
       {imgArr.map((item, idx) => {
         return (
           <div key={idx}>

@@ -4,7 +4,7 @@ import React from "react";
 const CustomButton = ({
   text,
   className = "",
-  onClick = () => console.log("hello"),
+  onClick = () => console.log("no onclick their"),
 }) => {
   return (
     <button
@@ -12,6 +12,7 @@ const CustomButton = ({
         "capitalize cursor-pointer select-none hover:opacity-80 rounded-md px-9 py-2",
         className
       )}
+      onClick={onClick}
     >
       {text}
     </button>
