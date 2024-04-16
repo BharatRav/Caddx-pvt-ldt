@@ -4,10 +4,7 @@ import classNames from "classnames";
 const P = ({ className, children }) => {
   return (
     <p
-      className={classNames(
-        "text-paragraph text-justify leading-8 select-none",
-        className
-      )}
+      className={classNames("text-paragraph  leading-7 select-none", className)}
     >
       {children}
     </p>
