@@ -18,7 +18,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-blue-300 flex flex-col gap-4 p-5 text-black rounded-lg hover:shadow-xl duration-300"
+      className="bg-[#ee6944] flex flex-col gap-4 p-5 text-black rounded-lg hover:shadow-xl duration-300"
     >
       <div>
         <h2 className="text-center font-bold text-3xl">Contact Us</h2>
@@ -43,6 +43,26 @@ const ContactForm = () => {
           "p-2 rounded-lg focus:outline-1 inset-0 ring-offset-0 focus:outline-orange-red"
         }
       />
+      <input
+        type="text"
+        value={formData.name}
+        name="phone"
+        onChange={handleInputChange}
+        placeholder="Enter your phone"
+        className={
+          "p-2 rounded-lg focus:outline-1 inset-0 ring-offset-0 focus:outline-orange-red"
+        }
+      />
+      <input
+        type="text"
+        value={formData.name}
+        name="subject"
+        onChange={handleInputChange}
+        placeholder="Enter your subjects"
+        className={
+          "p-2 rounded-lg focus:outline-1 inset-0 ring-offset-0 focus:outline-orange-red"
+        }
+      />
       <textarea
         type="message"
         rows={4}
@@ -56,7 +76,7 @@ const ContactForm = () => {
       />
       <CustomButton
         onClick={handleSubmit}
-        className="bg-red-400 text-white w-fit"
+        className="bg-blue-400 text-white w-fit"
         text={"Submit"}
       />
     </form>

@@ -1,5 +1,6 @@
 import { WhatsApp } from "@mui/icons-material";
 import ContactForm from "../components/contactus/ContactForm";
+import CompanyAddress from "../components/CompanyAddress";
 
 const Contact = () => {
   const timings = [
@@ -37,7 +38,7 @@ const Contact = () => {
       <div className="text-gray-600 text-4xl font-semibold text-center m-4">
         CONTACT US
       </div>
-      <div className=" flex flex-col gap-3">
+      <div className=" flex flex-col gap-3 m-5">
         <h4 className="font-medium text-black text-center">
           Better yet, see us in person!
         </h4>
@@ -50,27 +51,12 @@ const Contact = () => {
           <span>Message us on whatsapp</span>
         </button>
       </div>
-      <div className="flex md:flex-row flex-col p-4">
-        <div className=" md:w-1/2">
-          <p className=" text-black text-center font-semibold text-3xl">
-            CadxAutomation
-          </p>
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-0">
+        <CompanyAddress />
+        <div className="rounded-lg max-w-2xl px-5">
+          <ContactForm />
         </div>
-        <div className="flex flex-col gap-1">
-          <p className="self-center text-center font-semibold text-black">
-            Hours
-          </p>
-          {timings.map((item, idx) => {
-            return (
-              <div className="text-black text-center" key={idx}>{`${item.day} ${
-                item.isClosed ? "Closed" : "09.00am - 05.00pm"
-              }`}</div>
-            );
-          })}
-        </div>
-      </div>
-      <div className="rounded-lg px-5">
-        <ContactForm />
       </div>
     </div>
   );

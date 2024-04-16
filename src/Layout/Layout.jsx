@@ -7,28 +7,28 @@ import { useState } from "react";
 import { CircleOutlined } from "@mui/icons-material";
 
 const Layout = ({ children }) => {
-  const [left, setLeft] = useState(0);
-  const [top, setTop] = useState(0);
+  // const [left, setLeft] = useState(0);
+  // const [top, setTop] = useState(0);
 
-  const handleCursorAnimationLogic = (e) => {
-    // console.log(e);
-    // setLeft(e.clientX);
-    // setTop(e.clientY);
-    setLeft(e.pageX);
-    setTop(e.pageY);
-  };
+  // const handleCursorAnimationLogic = (e) => {
+  //   // console.log(e);
+  //   // setLeft(e.clientX);
+  //   // setTop(e.clientY);
+  //   setLeft(e.pageX);
+  //   setTop(e.pageY);
+  // };
   return (
     <div
-      onWheel={handleCursorAnimationLogic}
+      // onWheel={handleCursorAnimationLogic}
       className="w-screen overflow-hidden overflow-x-hidden overflow-y-hidden bg-white flex relative h-full flex-col flex-start gap-0"
-      onMouseMove={handleCursorAnimationLogic}
+      // onMouseMove={handleCursorAnimationLogic}
     >
       <div className="h-[40px]">
         <NavBar />
       </div>
 
       {/* cursor animation */}
-      <span
+      {/* <span
         style={{
           position: "absolute",
           left: `${left}px`,
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         className={`text-yellow-500 pointer-events-none -translate-x-1/2 -translate-y-1/2 h-2 w-2 duration-300 z-50`}
       >
         {<CircleOutlined fontSize="large" />}
-      </span>
+      </span> */}
 
       {/* cursor animation */}
 
