@@ -1,8 +1,5 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import engineerPic from "../../assets/1.jpg";
-import secondPic from "../../assets/2.jpg";
-import thirdPic from "../../assets/3.jpg";
 import CustomImage from "../Shared/CustomImage";
 const OurTeam = ({ imgArr = [] }) => (
   <div className="text-white py-8">

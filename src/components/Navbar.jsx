@@ -72,7 +72,7 @@ const NavBar = () => {
       </button>
       {/* mobile */}
       <button
-        className="bg-transparent hover:scale-105 md:hidden px-6 duration-1000 delay-200 my-auto py-1 text-gray-400 absolute right-2 top-2"
+        className="bg-transparent hover:scale-105 md:hidden px-6 duration-1000 delay-200 my-auto py-1 text-gray-400 absolute right-2 "
         onClick={handleMenu}
       >
         {open ? <Close /> : <Menu />}

@@ -48,7 +48,14 @@ const Contact = () => {
         </p>
         <button className="bg-gray-600 px-6 py-2 self-center rounded-lg cursor-pointer hover:bg-gray-900 duration-200 shadow-md">
           <WhatsApp />
-          <span>Message us on whatsapp</span>
+          <span>
+            <a
+              href="https://api.whatsapp.com/send?phone=9990095923"
+              target="_blank"
+            >
+              Message Us on WhatsApp
+            </a>
+          </span>
         </button>
       </div>
 
